@@ -16,3 +16,9 @@
 """
 
 mac = "AAAA:BBBB:CCCC"
+
+mac_first_oct = int(mac.split(":")[0],16)
+mac_second_oct = int(mac.split(":")[1],16)
+mac_third_oct = int(mac.split(":")[2],16)
+
+print('{:b}{:b}{:b}'.format(mac_first_oct , mac_second_oct , mac_third_oct))
